@@ -1,64 +1,129 @@
+# Task Manager Application
 
-# Task Management Application
+A full-stack task management application built with React, Node.js, and MongoDB. This application allows users to create, manage, and track their tasks efficiently with a modern and responsive user interface.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Task Management**
+  - Create, read, update, and delete tasks
+  - Mark tasks as complete/incomplete
+  - Set task priorities
+  - Add due dates
+  - Task categorization
 
-### `npm start`
+- **User Interface**
+  - Modern and responsive design
+  - Dark/Light mode support
+  - Intuitive task organization
+  - Real-time updates
+  - Smooth animations
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Technical Features**
+  - RESTful API architecture
+  - MongoDB database integration
+  - JWT authentication
+  - State management with Redux
+  - Responsive design with Tailwind CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v14 or higher)
+- MongoDB
+- npm or yarn
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd task-manager
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install backend dependencies**
+   ```bash
+   cd backend
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Install frontend dependencies**
+   ```bash
+   cd ../frontend
+   npm install
+   ```
 
-### `npm run eject`
+4. **Set up environment variables**
+   - Create `.env` file in the backend directory
+   - Add the following variables:
+     ```
+     PORT=5000
+     MONGODB_URI=your_mongodb_uri
+     JWT_SECRET=your_jwt_secret
+     ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Running the Application
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Start the backend server**
+   ```bash
+   cd backend
+   npm run dev
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Start the frontend development server**
+   ```bash
+   cd frontend
+   npm start
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The application will be available at `http://localhost:3000`
+
+## Tech Stack
+
+### Frontend
+- React.js
+- Redux Toolkit
+- Tailwind CSS
+- React Router
+- Axios
+- React Icons
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
+- Bcrypt
+
+## Project Structure
+task-manager/
+├── frontend/ # React frontend application
+│ ├── public/ # Static files
+│ └── src/ # Source files
+│ ├── components/ # React components
+│ ├── pages/ # Page components
+│ ├── redux/ # Redux store and slices
+│ ├── services/ # API services
+│ └── utils/ # Utility functions
+│
+└── backend/ # Node.js backend application
+├── config/ # Configuration files
+├── controllers/ # Route controllers
+├── middleware/ # Custom middleware
+├── models/ # Database models
+└── routes/ # API routes
 
 
-### Code Splitting
+## API Endpoints
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Tasks
+- `GET /api/tasks` - Get all tasks
+- `POST /api/tasks` - Create a new task
+- `GET /api/tasks/:id` - Get a specific task
+- `PUT /api/tasks/:id` - Update a task
+- `DELETE /api/tasks/:id` - Delete a task
 
-### Analyzing the Bundle Size
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-
+- Allen 
